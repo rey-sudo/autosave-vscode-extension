@@ -14,11 +14,11 @@ export function activate(context: vscode.ExtensionContext) {
         timeout = setTimeout(async () => {
             try {
                 await editor.document.save();
-                console.log(`Archivo guardado automáticamente: ${editor.document.fileName}`);
+                console.log(`File saved automatically: ${editor.document.fileName}`);
             } catch (error) {
-                console.error('Error guardando el archivo:', error);
+                console.error('Error saving the file:', error);
             }
-        }, 500);
+        }, 600);
     });
 
     context.subscriptions.push(disposable);

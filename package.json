@@ -1,14 +1,23 @@
 {
   "name": "autosave",
   "displayName": "autosave",
-  "description": "autosave async typing",
-  "version": "0.0.1",
-  "publisher": "tu-nombre",
+  "description": "autosave after typing with 500 ms delay",
+  "version": "1.0.1",
+  "publisher": "rey-sudo",
   "engines": {
     "vscode": "^1.103.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["*"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rey-sudo/autosave-vscode-extension"
+  },
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
   "main": "./out/extension.js",
   "contributes": {},
   "scripts": {
